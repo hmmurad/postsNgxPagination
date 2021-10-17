@@ -21,9 +21,9 @@ npm install ngx-pagination --save
   })
 
  3. In Template
-     <ul>
-        <li *ngFor="let item of collection | paginate: { itemsPerPage: 10, currentPage: p }"> ... </li>
-      </ul>
+ 
+     *ngFor="let item of collection | paginate: { itemsPerPage: 10, currentPage: p }
+
 
     <pagination-controls (pageChange)="p = $event"></pagination-controls>
     
